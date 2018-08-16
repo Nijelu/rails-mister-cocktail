@@ -2,7 +2,7 @@ class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show]
 
   def index
-    @cocktails = Cocktail.all
+    @cocktails = params[:query] ? Cocktail.all : Cocktail.where('name LIKE ?', "%#{params[:query]}%")
   end
 
   def show

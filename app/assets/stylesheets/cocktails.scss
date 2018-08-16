@@ -1,3 +1,35 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: black;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%),url('https://chateausuau.com/wp-content/uploads/2015/09/5-cocktails-au-vin-rouge.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 0 0 $royal-violet,
+              -2px 0 0 $royal-violet,
+              0 2px 0 $royal-violet,
+              0 -2px 0 $royal-violet,
+              3px 3px $royal-violet,
+              -1px -1px 0 $royal-violet,
+              1px -1px 0 $royal-violet,
+              -1px 1px 0 $royal-violet;
+  transform: skewY(-5deg);
+}
+
+h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}

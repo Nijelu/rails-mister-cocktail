@@ -13,7 +13,7 @@ $font-size-base: 18px;
 $gray-base:       $gray;
 $brand-primary:   $blue;
 $brand-success:   $green;
-$brand-info:      $yellow;
+$brand-info:      $dark-orange;
 $brand-danger:    $red;
 $brand-warning:   $orange;
 
@@ -22,4 +22,14 @@ $border-radius-base:  2px;
 $border-radius-large: 2px;
 $border-radius-small: 2px;
 
+// Panel
+$panel-bg: $sunset-glory;
+
+$state-info-text: black;
+$state-info-bg: $orange;
+$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
+
+// List-group
+$list-group-bg: $sunset-glory;
+$list-group-border: darken(adjust-hue($list-group-bg, -10), 7%);
 // Override other variables below!
