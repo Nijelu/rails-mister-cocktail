@@ -21,7 +21,7 @@
       <div class="col-xs-4">
         <%= link_to cocktail_path(cocktail) do %>
           <div class="card" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
-            <div class="card-image" style="background-image: url('<%= cocktail.image_url %>')">
+            <div class="card-image" style="background-image: url('<%= cl_image_path(cocktail.photo, crop: :fill) unless cocktail.photo.blank? %>')">
               <span><%= cocktail.name %></span>
             </div>
 

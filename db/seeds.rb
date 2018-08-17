@@ -14,3 +14,8 @@ ingredients_list = JSON.parse(open(url).read)['drinks']
 ingredients_list.each do |ingredient|
   Ingredient.create(name: ingredient['strIngredient1'])
 end
+
+# mojito_url = "https://static.750g.com/images/622-auto/b520523117d647dab6b842a36f4cc7f5/mojito-le-vrai.jpg"
+# cocktail = Cocktail.new(name: 'Mojito')
+# cocktail.remote_photo_url = mojito_url
+# cocktail.save
