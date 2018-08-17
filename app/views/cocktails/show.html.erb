@@ -15,7 +15,7 @@
                 <h2 class="text-center"><%= @cocktail.name %></h2>
               </div>
               <div class="panel-body">
-                <%= image_tag(@cocktail.photo.url(:thumbnail), width: '100%') unless @cocktail.photo.blank? %>
+                <%= cl_image_tag(@cocktail.photo, width: '100%') unless @cocktail.photo.blank? %>
               </div>
             </div>
           </div>
